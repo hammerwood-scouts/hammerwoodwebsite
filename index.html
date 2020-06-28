@@ -1,104 +1,61 @@
-
 <html>
-    <head><title>Hammerwood Scout Campsite</title>
+<head>
+    <title>Hammerwood Scout Campsite</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a33e27c8e1.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="https://www.hammerwood.org.uk" />
     <meta property="og:image" content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true" />
     <meta property="og:title" content="Hammerwood Scout Campsite" />
-    <meta property="og:description" content="Hammerwood Scout Campsite" />    <style type="text/css">
-    body{
-     background:#0B5345;
-     font-family: 'Roboto Condensed', sans-serif;
-     color:white;
-    }
-    a {
-     text-decoration:none;
-     border:0px;
-    }
-    .borderhover2{
-     text-align:left;
-     float:left;
-     margin:8px;
-     display:block;
-     width:240px;
-     height:160px;
-     padding:0px;
-     overflow:hidden;
-     background-color:#ffffff;
-     border:1px solid #000000;
-     border-radius:15px;
-     box-shadow: 0px 0px 0px #000000;
-     opacity:0.9;
-     transition: border-radius 150ms, box-shadow 150ms, opacity 150ms;
-    }
-    .borderhover2:hover{
-     border-radius:5px;
-     opacity:1;
-    }
-    .overtop{
-     position:relative;
-     top:-150px;
-     left:15px;
-     z-index:2;
-     font-family: 'Roboto Condensed', sans-serif;
-     font-size: 24px;
-     color: white;
-    }
+    <meta property="og:description" content="Hammerwood Scout Campsite" />    
+</head>
 
-    h1{
-     font-family: 'Roboto Condensed', sans-serif;
-     font-size: 70px;
-     color:white;
-     text-align:right;
-     margin:0px 10px;
-    }
-    h2{
-     font-family: 'Roboto Condensed', sans-serif;
-     font-size: 40px;
-     color:white;
-     text-align:right;
-     margin:-16px 10px 30px 10px;
-    }
-    
-    </style>
-    </head>
-    <body>
-    
-    
-    
-    
-    
-    
-    
-    <div style="max-width:780px;margin:0px auto;">
-    
-    <div style="clear:both"><img src="https://github.com/tcluk/hammerwood/blob/master/hammerwood.png?raw=true" alt=></div>
-    <div style="float:right;"><img style="max-width:90%;height:auto;" src="newimg/tiles/hammerwoodlogo.png"></div>
-    <div style="clear:both">&nbsp;</div>
-    
-    
-        <div class="borderhover2"><a href="/camping"><img src="newimg/tiles/camping.jpg" alt="Camping"><span class="overtop">Camping</span></a></div>
-        <div class="borderhover2"><a href="/hall+kitchen"><img src="newimg/tiles/kitchen.jpg" alt="Hall &amp; Kitchen"><span class="overtop">Hall &amp; Kitchen</span></a></div>
-        <div class="borderhover2"><a href="/lodge"><img src="newimg/tiles/lodge.jpg" alt="The Lodge"><span class="overtop">The Lodge</span></a></div>
-        <div class="borderhover2"><a href="/bookings"><img src="newimg/tiles/bookings.jpg" alt="Bookings"><span class="overtop">Contact &amp;<br>Bookings</span></a></div>
-        <div class="borderhover2"><a href="/location"><img src="newimg/tiles/location.jpg" alt="Location"><span class="overtop">Location</span></a></div>
-        <div class="borderhover2"><a href="/hiking"><img src="newimg/tiles/compass.jpg" alt="Hiking"><span class="overtop">Hiking</span></a></div>
-    
-    
-    
-    <div style="clear:both;">
-    &copy; Hammerwood Scout Campsite Management Committee
+
+<body>
+    <!--start of header-->
+    <div class="header_container">
+        <img class="motif_img" src="scoutmotif.png" alt="scout motif">
+        <a href="../index.html"><img class="title_img" src="hammerwood.png" alt="hammerwood scout campsite">
     </div>
-    
+    <!--end of header-->
+
+    <!--start of navigation-->
+    <div class="navbar"> 
+        <a class="menulink" href="/about.html">About</a>
+        <a class="menulink" href="/camping.html">Camping</a>
+        <a class="menulink" href="/facilities.html">Facilities</a>
+        <a class="menulink" href="/hiking.html">Hiking</a>
+        <a class="menulink" href="/activities.html">Activities</a>
+        <a class="menulink" href="/location.html">Location</a>
+        <a class="menulink" href="/contact.html">Contact</a>
+      </div>
+    <!--end of nav bar-->
+
+    <!--main content-->
+    <div class="main_container">
+        <img class="body_img align-left" src="camp_trees.jpg" alt="camping trees">
+        <p>Here is some test content.</p>
+        <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    </body>
-    </html>
-    
+
+    <!--end of main content-->
+
+    <!--start of follow buttons-->
+    <div class="social_footer_container">
+        <!-- Facebook Follow Button -->
+        <a class="icon" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fapad"></i>Facebook</a>
+        <!-- Instagram Follow Button -->
+        <a class="icon" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fapad"></i>Instagram</a>        
+        <!-- Google Follow Button -->
+        <a class="icon" href="https://google.com" target="_blank"><i class="fab fa-google fapad"></i>Google</a>
+    </div>
+    <!--end of follow buttons-->
+
+        <!--start of footer-->
+        <div class="footer_container">
+        <p class="footer_text"><i class="far fa-copyright fapad"></i>Hammerwood Management Committee, 2020</p>
+        </div>
+        <!--end of footer-->    
+</body>
+</html>
