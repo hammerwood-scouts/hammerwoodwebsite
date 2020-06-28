@@ -38,6 +38,11 @@ body{
     font-size: 30px;
    }
 
+   p, li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+   }
+
    .header_container {
     display: flex; /* or inline-flex */
     flex-direction: row;
