@@ -8,30 +8,50 @@ body {
 	background:#0B5345;
 	font-family: 'Open Sans', sans-serif;
 	max-width: 1000px;
-	margin: 20px 50px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	/* font-size: 1em; */
 	margin: 0;
 }
 
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
 .header {
-	height: 110px;
+	height: 60px;
 	display: flex;
-	margin: 20px 0;
+	margin: 20px 20px;
 	align-items: center;
+}
+
+.menu-button {
+	appearance: none;
+	border: none;
+	background: none;
+	height: 25px;
+	width: 25px;
+	padding: 5px;
+	fill: white;
+	cursor: pointer;
 }
 
 .header-logo {
 	height: 100%;
-	width: 110px;
 }
 
 .main-heading {
 	flex-grow: 1;
+	font-size: 1.5em;
 }
 
 .main-heading-row {
@@ -40,23 +60,49 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: white;
-	/* font-size: 2.5em; */
 }
 
-nav {
-	margin: 50px 0;
+.navigation {
+	position: absolute;
+    z-index: 1;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+	padding-top: 50px;
+	transform: translateX(-103vw);
+	transition: transform 0.3s ease;
+	opacity: 0;
 }
 
-nav ul {
+.navigation.open {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.menu-close-container {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 0 40px;
+}
+
+
+.navigation-links {
 	padding:0;
 	margin: 0;
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;
 	color: white;
+	flex-direction: column;
+	align-items: center;
 }
 
-nav ul li a {
+.navigation-links li {
+	margin: 10px 0;
+}
+
+.navigation-links li a {
 	text-decoration: none;
 	color: white;
 }
@@ -66,8 +112,40 @@ main {
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 8px;
+	margin: 20px 20px;
+
 }
 
 footer {
 	height: 100px
 }
+
+@media (min-width: 500px) { 
+	.header {
+		height: 100px
+	}
+	.header-logo {
+		width: 110px;
+	}
+	.main-heading {
+		font-size: 2em;
+	}
+
+	#menuOpen, #menuClose {
+		display: none;
+	}
+
+	.navigation {
+		opacity: 1;
+		position: static;
+		background-color: unset;
+		width: unset;
+		height: unset;
+		padding: 0;
+		transform: translateX(0);
+	}
+
+	.navigation-links {
+		flex-direction: row;
+	}
+ }
