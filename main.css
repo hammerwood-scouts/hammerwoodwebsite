@@ -118,7 +118,17 @@ main {
 	border: 2px solid black;
 	border-radius: 8px;
 	margin: 20px 20px;
+	padding: 20px 30px
+}
 
+main img {
+	border-radius: 3px;
+	width: 100%;
+	margin: 20px 0;
+}
+
+p:nth-of-type(1) {
+	margin-top: 0;
 }
 
 footer {
@@ -136,7 +146,7 @@ footer {
 		font-size: 2em;
 	}
 
-	#menuOpen, #menuClose {
+	.menu-close-container, #menuOpen, #menuClose {
 		display: none;
 	}
 
@@ -152,5 +162,21 @@ footer {
 
 	.navigation-links {
 		flex-direction: row;
+	}
+
+	main img {
+		width: unset;
+	}
+
+	main img:nth-of-type(odd) {
+		float: left;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	
+	main img:nth-of-type(even) {
+		float: right;
+		margin-right: 0;
+		margin-left: 20px;
 	}
  }
