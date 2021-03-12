@@ -139,6 +139,14 @@ td:last-of-type {
 	font-variant-numeric: tabular-nums;
 }
 
+ol {
+	margin: 20px 0;
+}
+
+ol li {
+	margin-top: 20px;
+}
+
 footer {
 	height: 100px
 }
@@ -175,6 +183,7 @@ footer {
 	main img {
 		width: unset;
 		margin: 0;
+		max-width: 100%;
 	}
 
 	main img:nth-of-type(odd) {
