@@ -127,6 +127,18 @@ p:nth-of-type(1) {
 	margin-top: 0;
 }
 
+td {
+	padding: 5px 20px;
+}
+
+td:first-of-type {
+	font-weight: bold;
+}
+
+td:last-of-type {
+	font-variant-numeric: tabular-nums;
+}
+
 footer {
 	height: 100px
 }
