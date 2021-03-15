@@ -1,94 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Hammerwood Scout Campsite</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://www.hammerwood.org.uk" />
+		<meta
+			property="og:image"
+			content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true"
+		/>
+		<meta property="og:title" content="Hammerwood Scout Campsite" />
+		<meta property="og:description" content="Hammerwood Scout Campsite" />
+	</head>
 
-<head>
-	<title>Hammerwood Scout Campsite</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-	<link href="./main.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:url" content="https://www.hammerwood.org.uk" />
-	<meta property="og:image" content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true" />
-	<meta property="og:title" content="Hammerwood Scout Campsite" />
-	<meta property="og:description" content="Hammerwood Scout Campsite" />
-</head>
-
-<body>
-	<header class="header">
-		<button id="menuOpen" class="menu-button">
-			<span class="visually-hidden">Open navigation menu</span>
-			<svg aria-hidden="true" id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<rect height="2" width="16"/>
-				<rect height="2" width="16" y="7"/>
-				<rect height="2" width="16" y="14"/>
-			</svg>
-		</button>
-		<h1 class="main-heading">
-			<span class="main-heading-row">Hammerwood</span>
-			<span class="main-heading-row"> Scout Campsite</span>
-		</h1>
-		<img class="header-logo" src="./images/fleur-de-lis-marque.svg" alt="Scout Logo">
-	</header>
-	<nav class="navigation">
-		<div class="menu-close-container">
-			<button id="menuClose" class="menu-button">
-				<span class="visually-hidden">Close navigation menu</span>
+	<body>
+		<header class="header">
+			<button id="menuOpen" class="menu-button">
+				<span class="visually-hidden">Open navigation menu</span>
 				<svg
 					aria-hidden="true"
+					id="Layer_1_1_"
+					style="enable-background: new 0 0 16 16"
 					version="1.1"
-					viewBox="0 0 14 14"
+					viewBox="0 0 16 16"
+					xml:space="preserve"
 					xmlns="http://www.w3.org/2000/svg"
-					xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 					xmlns:xlink="http://www.w3.org/1999/xlink"
 				>
-						<g fill="#fff" id="Core" transform="translate(-341.000000, -89.000000)">
-							<g id="close" transform="translate(341.000000, 89.000000)">
-								<path d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z" id="Shape"/>
-							</g>
-						</g>
+					<rect height="2" width="16" />
+					<rect height="2" width="16" y="7" />
+					<rect height="2" width="16" y="14" />
 				</svg>
 			</button>
-		</div>
-		<ul class="navigation-links">
-			<!-- <li><a href="/about">About</a></li> -->
-			<li><a href="/camping">Camping</a></li>
-			<li><a href="/facilities">Facilities</a></li>
-			<li><a href="/hiking">Hiking</a></li>
-			<li><a href="/location">Location</a></li>
-			<li><a href="/bookings">Bookings</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h2>Camping</h2>
-		<img alt="A photo of one of the camping sites" src="/images/camp_trees.jpg">
-		<p>The campsite has 10 managed camping grounds, each with their own qualities. Some are open and have plenty of space, while others are more sheltered. Much of the site is quite wild, and camping can be arranged in alternative areas for more ‘wild’ or ‘survival’ style camps.</p>
-		<p>In addition to two main campfire circles, campfires are permitted on individual sites. There is plenty of wood on the ground, as well as areas with a lot of thin, dead standing trees. Care should be taken in these areas but it can be good sawing practise for scouts. We sometimes have piles of wood available to use. Please check with a member of site staff before using these piles if they are on a site.</p>
-		<img alt="A photo of the field at the bottom of the campsite" src="/images/camp_field.jpg">
-		<p>At the southern end of the site we have 2 playing fields. These are available for everyone to use. If required, you may be able to book one of them for a large camp.</p>
-		<p>There are taps for water access across the site, and some camping grounds have a sink and/or very basic outdoor kitchen setup. The toilet block is available for all campers.</p>
+			<h1 class="main-heading">
+				<span class="main-heading-row">Hammerwood</span>
+				<span class="main-heading-row"> Scout Campsite</span>
+			</h1>
+			<img
+				class="header-logo"
+				src="./images/fleur-de-lis-marque.svg"
+				alt="Scout Logo"
+			/>
+		</header>
+		<nav class="navigation">
+			<div class="menu-close-container">
+				<button id="menuClose" class="menu-button">
+					<span class="visually-hidden">Close navigation menu</span>
+					<svg
+						aria-hidden="true"
+						version="1.1"
+						viewBox="0 0 14 14"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<g
+							fill="#fff"
+							id="Core"
+							transform="translate(-341.000000, -89.000000)"
+						>
+							<g id="close" transform="translate(341.000000, 89.000000)">
+								<path
+									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+									id="Shape"
+								/>
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<ul class="navigation-links">
+				<!-- <li><a href="/about">About</a></li> -->
+				<li><a href="/camping">Camping</a></li>
+				<li><a href="/facilities">Facilities</a></li>
+				<li><a href="/hiking">Hiking</a></li>
+				<li><a href="/location">Location</a></li>
+				<li><a href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Camping</h2>
+			<img
+				alt="A photo of one of the camping sites"
+				src="/images/camp_trees.jpg"
+			/>
+			<p>
+				The campsite has 10 managed camping grounds, each with their own
+				qualities. Some are open and have plenty of space, while others are more
+				sheltered. Much of the site is quite wild, and camping can be arranged
+				in alternative areas for more ‘wild’ or ‘survival’ style camps.
+			</p>
+			<p>
+				In addition to two main campfire circles, campfires are permitted on
+				individual sites. There is plenty of wood on the ground, as well as
+				areas with a lot of thin, dead standing trees. Care should be taken in
+				these areas but it can be good sawing practise for scouts. We sometimes
+				have piles of wood available to use. Please check with a member of site
+				staff before using these piles if they are on a site.
+			</p>
+			<img
+				alt="A photo of the field at the bottom of the campsite"
+				src="/images/camp_field.jpg"
+			/>
+			<p>
+				At the southern end of the site we have 2 playing fields. These are
+				available for everyone to use. If required, you may be able to book one
+				of them for a large camp.
+			</p>
+			<p>
+				There are taps for water access across the site, and some camping
+				grounds have a sink and/or very basic outdoor kitchen setup. The toilet
+				block is available for all campers.
+			</p>
+		</main>
+		<footer>© Hammerwood Scout Campsite Management Committee</footer>
+	</body>
 
-	</main>
-	<footer>© Hammerwood Scout Campsite Management Committee</footer>
-</body>
+	<script>
+		var body = document.querySelector('body');
+		var menuOpen = document.getElementById('menuOpen');
+		var menuClose = document.getElementById('menuClose');
+		var navigation = document.querySelector('.navigation');
 
-<script>
-	var body = document.querySelector('body')
-	var menuOpen = document.getElementById('menuOpen')
-	var menuClose = document.getElementById('menuClose')
-	var navigation = document.querySelector('.navigation')
+		menuOpen.addEventListener('click', function () {
+			navigation.classList.add('open');
+			body.classList.add('no-scroll');
+			menuClose.focus();
+		});
 
-	menuOpen.addEventListener('click', function () {
-		navigation.classList.add('open')
-		body.classList.add('no-scroll')
-		menuClose.focus()
-	})
-	
-	menuClose.addEventListener('click', function () {
-		navigation.classList.remove('open')
-		body.classList.remove('no-scroll')
-		menuOpen.focus()
-	})
-</script>
-
+		menuClose.addEventListener('click', function () {
+			navigation.classList.remove('open');
+			body.classList.remove('no-scroll');
+			menuOpen.focus();
+		});
+	</script>
 </html>

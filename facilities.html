@@ -1,113 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Hammerwood Scout Campsite</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://www.hammerwood.org.uk" />
+		<meta
+			property="og:image"
+			content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true"
+		/>
+		<meta property="og:title" content="Hammerwood Scout Campsite" />
+		<meta property="og:description" content="Hammerwood Scout Campsite" />
+	</head>
 
-<head>
-	<title>Hammerwood Scout Campsite</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-	<link href="./main.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:url" content="https://www.hammerwood.org.uk" />
-	<meta property="og:image" content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true" />
-	<meta property="og:title" content="Hammerwood Scout Campsite" />
-	<meta property="og:description" content="Hammerwood Scout Campsite" />
-</head>
-
-<body>
-	<header class="header">
-		<button id="menuOpen" class="menu-button">
-			<span class="visually-hidden">Open navigation menu</span>
-			<svg aria-hidden="true" id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<rect height="2" width="16"/>
-				<rect height="2" width="16" y="7"/>
-				<rect height="2" width="16" y="14"/>
-			</svg>
-		</button>
-		<h1 class="main-heading">
-			<span class="main-heading-row">Hammerwood</span>
-			<span class="main-heading-row"> Scout Campsite</span>
-		</h1>
-		<img class="header-logo" src="./images/fleur-de-lis-marque.svg" alt="Scout Logo">
-	</header>
-	<nav class="navigation">
-		<div class="menu-close-container">
-			<button id="menuClose" class="menu-button">
-				<span class="visually-hidden">Close navigation menu</span>
+	<body>
+		<header class="header">
+			<button id="menuOpen" class="menu-button">
+				<span class="visually-hidden">Open navigation menu</span>
 				<svg
 					aria-hidden="true"
+					id="Layer_1_1_"
+					style="enable-background: new 0 0 16 16"
 					version="1.1"
-					viewBox="0 0 14 14"
+					viewBox="0 0 16 16"
+					xml:space="preserve"
 					xmlns="http://www.w3.org/2000/svg"
-					xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 					xmlns:xlink="http://www.w3.org/1999/xlink"
 				>
-						<g fill="#fff" id="Core" transform="translate(-341.000000, -89.000000)">
-							<g id="close" transform="translate(341.000000, 89.000000)">
-								<path d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z" id="Shape"/>
-							</g>
-						</g>
+					<rect height="2" width="16" />
+					<rect height="2" width="16" y="7" />
+					<rect height="2" width="16" y="14" />
 				</svg>
 			</button>
-		</div>
-		<ul class="navigation-links">
-			<!-- <li><a href="/about">About</a></li> -->
-			<li><a href="/camping">Camping</a></li>
-			<li><a href="/facilities">Facilities</a></li>
-			<li><a href="/hiking">Hiking</a></li>
-			<li><a href="/location">Location</a></li>
-			<li><a href="/bookings">Bookings</a></li>
-		</ul>
-	</nav>
-	<main>
+			<h1 class="main-heading">
+				<span class="main-heading-row">Hammerwood</span>
+				<span class="main-heading-row"> Scout Campsite</span>
+			</h1>
+			<img
+				class="header-logo"
+				src="./images/fleur-de-lis-marque.svg"
+				alt="Scout Logo"
+			/>
+		</header>
+		<nav class="navigation">
+			<div class="menu-close-container">
+				<button id="menuClose" class="menu-button">
+					<span class="visually-hidden">Close navigation menu</span>
+					<svg
+						aria-hidden="true"
+						version="1.1"
+						viewBox="0 0 14 14"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<g
+							fill="#fff"
+							id="Core"
+							transform="translate(-341.000000, -89.000000)"
+						>
+							<g id="close" transform="translate(341.000000, 89.000000)">
+								<path
+									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+									id="Shape"
+								/>
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<ul class="navigation-links">
+				<!-- <li><a href="/about">About</a></li> -->
+				<li><a href="/camping">Camping</a></li>
+				<li><a href="/facilities">Facilities</a></li>
+				<li><a href="/hiking">Hiking</a></li>
+				<li><a href="/location">Location</a></li>
+				<li><a href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>The Hall</h2>
 
-		<h2>The Hall</h2>
-		
-		<p>The Hall, also known as "The Hut", has enough room to cater for over 20 with tables and chairs, as well as some soft seating.</p>
-		<p>The Hall is often used for catering, training, and rainy day activities for beaver and cub scouts.</p>
-		<p>There are a number of tables, with more under the bunks in the Lodge.</p>
-		<p>As with the Lodge, mains lighting is available when the generator is running and battery lighting when not.</p>
-		
-		<h3>Kitchen</h3>
-		
-		<ul>
-			<li>Stainless steel surfaces throughout</li>
-			<li>Industrial size gas oven, with 6 large hobs</li>
-			<li>Industrial electric fridge (no freezer)</li>
-			<li>1200watt industrial microwave</li>
-			<li>2 large sinks for washing dishes</li>
-			<li>Hand basin with electric hand dryer</li>
-			<li>A supply of plates, bowels, cups, cutlery, utensils and pans *</li>
-		</ul>
-		
-		<p>* Unfortunately we cannot guarantee that there will be a full set. We suggest at the very least you bring your own washing up liquid, cloths/sponges, vegetable peeler, can opener and long matches.</p>
-		<p>All sinks have hot and cold running water. Hot water is supplied by an electric boiler.</p>
-		<p>(note: the generator must be on for the electric appliances to run.)</p>
-		
-		<p>Electricity is supplied by a diesel generator that runs for a couple of hours in the morning for breakfast and during evening hours. This is included in the listed <a href="/bookings">prices</a>. Please contact us if you will need the generator on throughout the day.</p>
-		<p>Gas for the oven and hobs is supplied but billed separately.</p>
+			<p>
+				The Hall, also known as "The Hut", has enough room to cater for over 20
+				with tables and chairs, as well as some soft seating.
+			</p>
+			<p>
+				The Hall is often used for catering, training, and rainy day activities
+				for beaver and cub scouts.
+			</p>
+			<p>
+				There are a number of tables, with more under the bunks in the Lodge.
+			</p>
+			<p>
+				As with the Lodge, mains lighting is available when the generator is
+				running and battery lighting when not.
+			</p>
 
-	</main>
-	<footer>© Hammerwood Scout Campsite Management Committee</footer>
-</body>
+			<h3>Kitchen</h3>
 
-<script>
-	var body = document.querySelector('body')
-	var menuOpen = document.getElementById('menuOpen')
-	var menuClose = document.getElementById('menuClose')
-	var navigation = document.querySelector('.navigation')
+			<ul>
+				<li>Stainless steel surfaces throughout</li>
+				<li>Industrial size gas oven, with 6 large hobs</li>
+				<li>Industrial electric fridge (no freezer)</li>
+				<li>1200watt industrial microwave</li>
+				<li>2 large sinks for washing dishes</li>
+				<li>Hand basin with electric hand dryer</li>
+				<li>A supply of plates, bowels, cups, cutlery, utensils and pans *</li>
+			</ul>
 
-	menuOpen.addEventListener('click', function () {
-		navigation.classList.add('open')
-		body.classList.add('no-scroll')
-		menuClose.focus()
-	})
-	
-	menuClose.addEventListener('click', function () {
-		navigation.classList.remove('open')
-		body.classList.remove('no-scroll')
-		menuOpen.focus()
-	})
-</script>
+			<p>
+				* Unfortunately we cannot guarantee that there will be a full set. We
+				suggest at the very least you bring your own washing up liquid,
+				cloths/sponges, vegetable peeler, can opener and long matches.
+			</p>
+			<p>
+				All sinks have hot and cold running water. Hot water is supplied by an
+				electric boiler.
+			</p>
+			<p>
+				(note: the generator must be on for the electric appliances to run.)
+			</p>
 
+			<p>
+				Electricity is supplied by a diesel generator that runs for a couple of
+				hours in the morning for breakfast and during evening hours. This is
+				included in the listed <a href="/bookings">prices</a>. Please contact us
+				if you will need the generator on throughout the day.
+			</p>
+			<p>Gas for the oven and hobs is supplied but billed separately.</p>
+		</main>
+		<footer>© Hammerwood Scout Campsite Management Committee</footer>
+	</body>
+
+	<script>
+		var body = document.querySelector('body');
+		var menuOpen = document.getElementById('menuOpen');
+		var menuClose = document.getElementById('menuClose');
+		var navigation = document.querySelector('.navigation');
+
+		menuOpen.addEventListener('click', function () {
+			navigation.classList.add('open');
+			body.classList.add('no-scroll');
+			menuClose.focus();
+		});
+
+		menuClose.addEventListener('click', function () {
+			navigation.classList.remove('open');
+			body.classList.remove('no-scroll');
+			menuOpen.focus();
+		});
+	</script>
 </html>

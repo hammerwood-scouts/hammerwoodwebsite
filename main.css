@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
 
 body {
-	background:#0B5345;
+	background: #0b5345;
 	font-family: 'Open Sans', sans-serif;
 	max-width: 1000px;
 	margin: 0 auto;
@@ -26,7 +27,7 @@ body.no-scroll {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
-  }
+}
 
 .header {
 	height: 60px;
@@ -65,11 +66,11 @@ body.no-scroll {
 
 .navigation {
 	position: absolute;
-    z-index: 1;
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+	z-index: 1;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
 	padding-top: 50px;
 	transform: translateX(-103vw);
 	transition: transform 0.3s ease;
@@ -87,9 +88,8 @@ body.no-scroll {
 	padding: 0 40px;
 }
 
-
 .navigation-links {
-	padding:0;
+	padding: 0;
 	margin: 0;
 	display: flex;
 	justify-content: space-evenly;
@@ -114,7 +114,7 @@ main {
 	border: 2px solid black;
 	border-radius: 8px;
 	margin: 20px 20px;
-	padding: 20px 30px
+	padding: 20px 30px;
 }
 
 main img {
@@ -148,12 +148,12 @@ ol li {
 }
 
 footer {
-	height: 100px
+	height: 100px;
 }
 
-@media (min-width: 500px) { 
+@media (min-width: 500px) {
 	.header {
-		height: 100px
+		height: 100px;
 	}
 	.header-logo {
 		width: 110px;
@@ -162,7 +162,9 @@ footer {
 		font-size: 2em;
 	}
 
-	.menu-close-container, #menuOpen, #menuClose {
+	.menu-close-container,
+	#menuOpen,
+	#menuClose {
 		display: none;
 	}
 
@@ -191,10 +193,10 @@ footer {
 		margin-right: 20px;
 		margin-left: 0;
 	}
-	
+
 	main img:nth-of-type(even) {
 		float: right;
 		margin-right: 0;
 		margin-left: 20px;
 	}
- }
+}
