@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hammerwood Scout Campsite</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://www.hammerwood.org.uk" />
+		<meta
+			property="og:image"
+			content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true"
+		/>
+		<meta property="og:title" content="Hammerwood Scout Campsite" />
+		<meta property="og:description" content="Hammerwood Scout Campsite" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+	</head>
+
+	<body>
+		<header class="header">
+			<button id="menuOpen" class="menu-button">
+				<span class="visually-hidden">Open navigation menu</span>
+				<svg
+					aria-hidden="true"
+					id="Layer_1_1_"
+					style="enable-background: new 0 0 16 16"
+					version="1.1"
+					viewBox="0 0 16 16"
+					xml:space="preserve"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+				>
+					<rect height="2" width="16" />
+					<rect height="2" width="16" y="7" />
+					<rect height="2" width="16" y="14" />
+				</svg>
+			</button>
+			<h1 class="main-heading">
+				<span class="main-heading-row">Hammerwood</span>
+				<span class="main-heading-row"> Scout Campsite</span>
+			</h1>
+			<img
+				class="header-logo"
+				src="./images/fleur-de-lis-marque.svg"
+				alt="Scout Logo"
+			/>
+		</header>
+		<nav class="navigation">
+			<div class="menu-close-container">
+				<button id="menuClose" class="menu-button">
+					<span class="visually-hidden">Close navigation menu</span>
+					<svg
+						aria-hidden="true"
+						version="1.1"
+						viewBox="0 0 14 14"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<g
+							fill="#fff"
+							id="Core"
+							transform="translate(-341.000000, -89.000000)"
+						>
+							<g id="close" transform="translate(341.000000, 89.000000)">
+								<path
+									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+									id="Shape"
+								/>
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<ul class="navigation-links">
+				<!-- <li><a href="/about">About</a></li> -->
+				<li><a href="/camping">Camping</a></li>
+				<li><a href="/facilities">Facilities</a></li>
+				<li><a href="/hiking">Hiking</a></li>
+				<li><a href="/location">Location</a></li>
+				<li><a href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h1>Facilities</h1>
+			<p>
+				Hammerwood Scout Campsite offers a dynamic site suitable for a host of
+				activities. Do get in touch with us to discuss your individual needs and
+				we’ll be able to confirm if our facilities meet your requirements. There
+				is step-free access to the hut, the lodge and the toilet block with
+				accessible parking available.
+			</p>
+			<h2>Accommodation</h2>
+			<p>
+				<strong>The Hut</strong> - comprises a hall, catering kitchen and
+				laundry facilities.
+			</p>
+			<p>
+				The hut is often used for catering, training, and indoor activities. The
+				hall offers a flexible space with enough room to cater for around 20
+				people with fold-away tables and stackable chairs.
+			</p>
+			<p>
+				The stainless steel catering kitchen is well-equipped for both small and
+				larger groups. It includes an industrial size gas oven, with 6 large
+				hobs and an industrial electric fridge. Please note there is no freezer
+				on site.
+			</p>
+			<p>
+				The lobby of the hut offers seating and shoe storage, as well a laundry
+				area with double sink, washing machine and tumble drier.
+			</p>
+			<p>
+				<strong>The Lodge</strong> - comprises 22 bunks divided into 3 rooms (16
+				bunks, 4 bunks, 2 bunks). The lodge has storage heaters which warm up
+				while the generator is running.
+			</p>
+			<p>
+				<strong>Toilet block</strong> - There is a toilet block for all users of
+				the site. We are currently
+				<a href="/">fundraising for a shower block</a>!
+			</p>
+			<p>
+				Please note: The site does not currently have grid power, so the
+				electricity for the site is powered via a diesel generator. This
+				typically only runs for a few hours in the morning, and in the evening.
+				Hot water is only available whilst the generator is on, and for a while
+				afterwards. The diesel expense is included in accommodation prices,
+				however please contact us if you would require electricity throughout
+				the day.
+			</p>
+		</main>
+		<footer>© Hammerwood Scout Campsite Management Committee</footer>
+	</body>
+
+	<script>
+		var body = document.querySelector('body');
+		var menuOpen = document.getElementById('menuOpen');
+		var menuClose = document.getElementById('menuClose');
+		var navigation = document.querySelector('.navigation');
+
+		menuOpen.addEventListener('click', function () {
+			navigation.classList.add('open');
+			body.classList.add('no-scroll');
+			menuClose.focus();
+		});
+
+		menuClose.addEventListener('click', function () {
+			navigation.classList.remove('open');
+			body.classList.remove('no-scroll');
+			menuOpen.focus();
+		});
+	</script>
+</html>

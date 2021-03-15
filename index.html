@@ -1,79 +1,129 @@
-<html>
-<head>
-    <title>Hammerwood Scout Campsite</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <link href="main.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a33e27c8e1.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://www.hammerwood.org.uk" />
-    <meta property="og:image" content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true" />
-    <meta property="og:title" content="Hammerwood Scout Campsite" />
-    <meta property="og:description" content="Hammerwood Scout Campsite" />    
-</head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hammerwood Scout Campsite</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://www.hammerwood.org.uk" />
+		<meta
+			property="og:image"
+			content="https://github.com/tcluk/hammerwood/blob/master/trees.JPG?raw=true"
+		/>
+		<meta property="og:title" content="Hammerwood Scout Campsite" />
+		<meta property="og:description" content="Hammerwood Scout Campsite" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+	</head>
 
+	<body>
+		<header class="header">
+			<button id="menuOpen" class="menu-button">
+				<span class="visually-hidden">Open navigation menu</span>
+				<svg
+					aria-hidden="true"
+					id="Layer_1_1_"
+					style="enable-background: new 0 0 16 16"
+					version="1.1"
+					viewBox="0 0 16 16"
+					xml:space="preserve"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+				>
+					<rect height="2" width="16" />
+					<rect height="2" width="16" y="7" />
+					<rect height="2" width="16" y="14" />
+				</svg>
+			</button>
+			<h1 class="main-heading">
+				<span class="main-heading-row">Hammerwood</span>
+				<span class="main-heading-row"> Scout Campsite</span>
+			</h1>
+			<img
+				class="header-logo"
+				src="./images/fleur-de-lis-marque.svg"
+				alt="Scout Logo"
+			/>
+		</header>
+		<nav class="navigation">
+			<div class="menu-close-container">
+				<button id="menuClose" class="menu-button">
+					<span class="visually-hidden">Close navigation menu</span>
+					<svg
+						aria-hidden="true"
+						version="1.1"
+						viewBox="0 0 14 14"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<g
+							fill="#fff"
+							id="Core"
+							transform="translate(-341.000000, -89.000000)"
+						>
+							<g id="close" transform="translate(341.000000, 89.000000)">
+								<path
+									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+									id="Shape"
+								/>
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+			<ul class="navigation-links">
+				<!-- <li><a href="/about">About</a></li> -->
+				<li><a href="/camping">Camping</a></li>
+				<li><a href="/facilities">Facilities</a></li>
+				<li><a href="/hiking">Hiking</a></li>
+				<li><a href="/location">Location</a></li>
+				<li><a href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Home</h2>
+		</main>
+		<footer>© Hammerwood Scout Campsite Management Committee</footer>
+	</body>
 
-<body>
-    <!--start of header-->
-    <div class="header_container">
-        <img class="motif_img" src="scoutmotif.png" alt="scout motif">
-        <a href="../index.html"><img class="title_img" src="hammerwood.png" alt="hammerwood scout campsite">
-    </div>
-    <!--end of header-->
+	<script>
+		var body = document.querySelector('body');
+		var menuOpen = document.getElementById('menuOpen');
+		var menuClose = document.getElementById('menuClose');
+		var navigation = document.querySelector('.navigation');
 
-    <!--start of navigation-->
-    <div class="navbar"> 
-        <a class="menulink" href="/about.html">About</a>
-        <a class="menulink" href="/camping.html">Camping</a>
-        <a class="menulink" href="/facilities.html">Facilities</a>
-        <a class="menulink" href="/hiking.html">Hiking</a>
-        <a class="menulink" href="/activities.html">Activities</a>
-        <a class="menulink" href="/location.html">Location</a>
-        <a class="menulink" href="/contact.html">Contact</a>
-      </div>
-    <!--end of nav bar-->
+		menuOpen.addEventListener('click', function () {
+			navigation.classList.add('open');
+			body.classList.add('no-scroll');
+			menuClose.focus();
+		});
 
-    <!--main content-->
-    <div class="main_container">
-        <h2>Camping at Hammerwood</h2>
-        <img class="body_img align_left" src="camp_trees.jpg" alt="camping trees">
-        <p>Here is some test content.</p>
-        <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-             content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-             <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                    content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                    <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                        content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                        <img class="body_img align_right" src="camp_field.jpg" alt="camping field">
-                        <p>Here is some test content.</p>
-                        <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                             content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                             <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                                content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                                <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                                    content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-                                    <p>Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test
-                                        content.Here is some more test content.Here is some more test content.Here is some more test content.Here is some more test content.</p>
-            </div>
-
-    <!--end of main content-->
-
-    <!--start of follow buttons-->
-    <div class="social_footer_container">
-        <!-- Facebook Follow Button -->
-        <a class="icon" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fapad"></i>Facebook</a>
-        <!-- Instagram Follow Button -->
-        <a class="icon" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fapad"></i>Instagram</a>        
-        <!-- Google Follow Button -->
-        <a class="icon" href="https://google.com" target="_blank"><i class="fab fa-google fapad"></i>Google</a>
-    </div>
-    <!--end of follow buttons-->
-
-        <!--start of footer-->
-        <div class="footer_container">
-        <p class="footer_text"><i class="far fa-copyright fapad"></i>Hammerwood Management Committee, 2020</p>
-        </div>
-        <!--end of footer-->    
-</body>
+		menuClose.addEventListener('click', function () {
+			navigation.classList.remove('open');
+			body.classList.remove('no-scroll');
+			menuOpen.focus();
+		});
+	</script>
 </html>

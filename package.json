@@ -1,0 +1,24 @@
+{
+	"name": "hammerwoodwebsite",
+	"scripts": {
+		"format": "prettier . --write",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tcluk/hammerwoodwebsite.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tcluk/hammerwoodwebsite/issues"
+	},
+	"homepage": "https://github.com/tcluk/hammerwoodwebsite#readme",
+	"devDependencies": {
+		"prettier": "^2.2.1"
+	},
+	"prettier": {
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true,
+		"useTabs": true
+	}
+}
