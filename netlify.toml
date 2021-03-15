@@ -1,3 +1,5 @@
+[build]
+
 # Redirect requests for "/" to "/camping"
 [[redirects]]
   from = "/"
