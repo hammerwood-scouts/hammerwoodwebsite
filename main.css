@@ -151,6 +151,14 @@ footer {
 	height: 100px;
 }
 
+.google-maps-embed {
+	margin: auto;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: 400px;
+}
+
 @media (min-width: 500px) {
 	.header {
 		height: 100px;
@@ -198,5 +206,9 @@ footer {
 		float: right;
 		margin-right: 0;
 		margin-left: 20px;
+	}
+
+	.google-maps-embed {
+		min-height: 450px;
 	}
 }
