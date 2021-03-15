@@ -14,6 +14,10 @@ body {
 	flex-direction: column;
 }
 
+a {
+	color: inherit;
+}
+
 body.no-scroll {
 	height: 100vh;
 	overflow: hidden;
@@ -105,7 +109,10 @@ body.no-scroll {
 
 .navigation-links li a {
 	text-decoration: none;
-	color: white;
+}
+
+.navigation-links li a:hover {
+	text-decoration: underline;
 }
 
 main {
@@ -115,6 +122,10 @@ main {
 	border-radius: 8px;
 	margin: 20px 20px;
 	padding: 20px 30px;
+}
+
+main a:hover {
+	text-decoration: none;
 }
 
 main img {
