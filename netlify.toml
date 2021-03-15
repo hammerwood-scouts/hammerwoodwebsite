@@ -1,0 +1,4 @@
+# Redirect requests for "/" to "/camping"
+[[redirects]]
+  from = "/"
+  to = "/camping"
