@@ -149,6 +149,10 @@ ol li {
 
 footer {
 	height: 100px;
+	padding: 0 30px 50px 30px;
+	text-align: center;
+	color: white;
+	font-size: 0.85rem;
 }
 
 .google-maps-embed {
