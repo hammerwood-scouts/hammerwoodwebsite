@@ -152,7 +152,7 @@ figcaption {
 	font-style: italic;
 }
 
-p:nth-of-type(1) {
+main p:nth-of-type(1) {
 	margin-top: 0;
 }
 
@@ -181,6 +181,51 @@ footer {
 	text-align: center;
 	color: white;
 	font-size: 0.85rem;
+}
+
+.social-links {
+	height: 40px;
+}
+
+.social-link {
+	display: inline-block;
+	margin: 10px;
+	height: 40px;
+	width: 40px;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+}
+
+.logo.facebook circle {
+	fill: white;
+}
+
+.logo.facebook path {
+	fill: #0b5345;
+}
+
+.logo.facebook:hover circle {
+	fill: #3c5a9a;
+}
+
+.logo.facebook:hover path {
+	fill: white;
+}
+
+.logo.instagram path {
+	fill: white;
+}
+
+.logo.instagram:hover path:nth-of-type(1) {
+	/* This fill is the gradient defined within the SVG element’s definitions */
+	fill: url(#0);
+}
+.logo.instagram:hover path:nth-of-type(2) {
+	/* This fill is the gradient defined within the SVG element’s definitions */
+	fill: url(#1);
 }
 
 .google-maps-embed {
