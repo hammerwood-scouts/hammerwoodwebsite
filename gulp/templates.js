@@ -12,8 +12,9 @@ const templates = async () => {
 		return;
 	}
 
-	// Check to see if a "dist" directory exists. If not, create it
-	await access('dist').catch(() => mkdir('dist'));
+	await access('dist') // Check to see if a "dist" directory exists.
+		.catch(() => mkdir('dist')) // If not, create it
+		.catch(() => {}); // In the meantime, this may have already been created by another task
 
 	// Iterate through each filename in the pages directory…
 	const promises = pages.map((filename) => {
