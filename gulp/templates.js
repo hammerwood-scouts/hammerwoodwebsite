@@ -1,6 +1,6 @@
 const { readFile, readdir, writeFile, access, mkdir } = require('fs').promises;
 
-module.exports = async () => {
+const templates = async () => {
 	const layout = await readFile('layouts/layout.html', 'utf-8');
 	const pages = await readdir('pages/');
 
@@ -23,3 +23,5 @@ module.exports = async () => {
 
 	return Promise.all(promises);
 };
+
+module.exports = templates;

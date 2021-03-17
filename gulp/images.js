@@ -1,5 +1,7 @@
 const { src, dest } = require('gulp');
 
-module.exports = async () => {
+const images = async () => {
 	return src('images/**/*').pipe(dest('dist/images'));
 };
+
+module.exports = images;
