@@ -1,7 +1,7 @@
 {
 	"name": "hammerwoodwebsite",
 	"scripts": {
-		"format": "prettier . --write",
+		"format": "prettier . --write --ignore-path .gitignore",
 		"build": "gulp",
 		"watch": "gulp --watch",
 		"dev": "concurrently \"npm:watch\" \"netlify dev\""
