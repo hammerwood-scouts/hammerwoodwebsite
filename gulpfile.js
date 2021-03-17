@@ -10,8 +10,9 @@ const sass = require('./gulp/sass');
 // prevent the task being run when we run `gulp watch`, but it
 // will run when a file changes.
 const watcher = () => {
-	watch('./{layouts,pages}/**/*.html', { ignoreInitial: true }, templates);
-	watch('./scss/*.scss', { ignoreInitial: true }, sass);
+	watch('./{layouts,pages}/**/*.html', { ignoreInitial: false }, templates);
+	watch('./scss/*.scss', { ignoreInitial: false }, sass);
+	watch('./images/**/*', { ignoreInitial: false }, images);
 };
 
 exports.default = parallel(templates, images, sass);
