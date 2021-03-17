@@ -1,4 +1,6 @@
 [build]
+publish = "dist"
+command = "npm run build"
 
 # Redirect requests for "/" to "/camping"
 [[redirects]]

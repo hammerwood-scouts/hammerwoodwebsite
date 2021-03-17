@@ -17,3 +17,6 @@ src/_includes/css
 
 # Misc old files
 old*
+
+# Local Netlify folder
+.netlify

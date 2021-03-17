@@ -1,8 +1,10 @@
 {
 	"name": "hammerwoodwebsite",
 	"scripts": {
-		"format": "prettier . --write",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier . --write --ignore-path .gitignore",
+		"build": "gulp",
+		"watch": "gulp --watch",
+		"dev": "concurrently \"npm:watch\" \"netlify dev\""
 	},
 	"repository": {
 		"type": "git",
@@ -13,6 +15,9 @@
 	},
 	"homepage": "https://github.com/tcluk/hammerwoodwebsite#readme",
 	"devDependencies": {
+		"concurrently": "^6.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"netlify-cli": "^3.13.1",
 		"prettier": "^2.2.1"
 	},
 	"prettier": {
@@ -20,5 +25,11 @@
 		"trailingComma": "all",
 		"singleQuote": true,
 		"useTabs": true
+	},
+	"dependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-sass": "^4.1.0",
+		"sass": "^1.32.8"
 	}
 }
