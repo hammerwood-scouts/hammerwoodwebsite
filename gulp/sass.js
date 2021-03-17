@@ -10,14 +10,14 @@ sassProcessor.compiler = require('sass');
 const isProduction = process.env.NODE_ENV === 'production';
 
 // The main Sass method grabs all root Sass files,
-// processes them, then sends them to the output calculator
+// processes them, then sends them to the dist directory
 const sass = () => {
 	return src('scss/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sassProcessor().on('error', sassProcessor.logError))
 		.pipe(cleanCSS(isProduction ? { level: 2 } : {}))
 		.pipe(sourcemaps.write('maps'))
-		.pipe(dest('dist', { sourceMaps: true }));
+		.pipe(dest('dist', { sourceMaps: !isProduction }));
 };
 
 module.exports = sass;
