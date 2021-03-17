@@ -1,9 +1,12 @@
-const { watch, parallel } = require('gulp');
+const { watch, parallel, src, dest } = require('gulp');
 
 // Pull in each task
 const templates = require('./gulp/templates');
 const images = require('./gulp/images');
 const sass = require('./gulp/sass');
+const webmanifest = () => {
+	return src('./site.webmanifest').pipe(dest('dist'));
+};
 
 // Set each directory and contents that we want to watch and
 // assign the relevant task. `ignoreInitial` set to false will
@@ -15,7 +18,7 @@ const watcher = () => {
 	watch('./images/**/*', { ignoreInitial: false }, images);
 };
 
-exports.default = parallel(templates, images, sass);
+exports.default = parallel(templates, images, sass, webmanifest);
 exports.templates = templates;
 exports.images = images;
 exports.sass = sass;
