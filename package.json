@@ -2,6 +2,7 @@
 	"name": "hammerwoodwebsite",
 	"scripts": {
 		"format": "prettier . --write",
+		"build": "gulp templates",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -20,5 +21,8 @@
 		"trailingComma": "all",
 		"singleQuote": true,
 		"useTabs": true
+	},
+	"dependencies": {
+		"gulp": "^4.0.2"
 	}
 }
