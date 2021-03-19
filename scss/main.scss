@@ -65,7 +65,7 @@ body.no-scroll {
 
 	&:focus {
 		outline: 2px solid currentColor;
-}
+	}
 
 	&.mobile-nav-menu-button--open {
 		fill: $green;
@@ -277,7 +277,7 @@ ol li {
 footer {
 	padding: 0 30px 50px 30px;
 	text-align: center;
-	color: white;
+	color: $green;
 	font-size: 0.85rem;
 }
 
@@ -295,35 +295,37 @@ footer {
 .logo {
 	height: 100%;
 	width: 100%;
-}
 
-.logo.facebook circle {
-	fill: white;
-}
+	&.facebook {
+		circle {
+			fill: $green;
 
-.logo.facebook path {
-	fill: #0b5345;
-}
+			:hover > & {
+				fill: #3c5a9a;
+			}
+		}
 
-.logo.facebook:hover circle {
-	fill: #3c5a9a;
-}
+		path {
+			fill: white;
+		}
+	}
 
-.logo.facebook:hover path {
-	fill: white;
-}
+	&.instagram {
+		path {
+			fill: $green;
+		}
 
-.logo.instagram path {
-	fill: white;
-}
-
-.logo.instagram:hover path:nth-of-type(1) {
-	/* This fill is the gradient defined within the SVG element’s definitions */
-	fill: url(#0);
-}
-.logo.instagram:hover path:nth-of-type(2) {
-	/* This fill is the gradient defined within the SVG element’s definitions */
-	fill: url(#1);
+		&:hover {
+			path:nth-of-type(1) {
+				/* This fill is the gradient defined within the SVG element’s definitions */
+				fill: url(#0);
+			}
+			path:nth-of-type(2) {
+				/* This fill is the gradient defined within the SVG element’s definitions */
+				fill: url(#1);
+			}
+		}
+	}
 }
 
 .google-maps-embed {
