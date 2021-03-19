@@ -39,7 +39,10 @@
 
 	<body>
 		<header class="header">
-			<button id="menuOpen" class="menu-button">
+			<button
+				id="menuOpen"
+				class="mobile-nav-menu-button mobile-nav-menu-button--open"
+			>
 				<span class="visually-hidden">Open navigation menu</span>
 				<svg
 					aria-hidden="true"
@@ -62,6 +65,7 @@
 			</h1>
 			<svg
 				class="header-logo"
+				aria-hidden="true"
 				version="1.0"
 				xmlns="http://www.w3.org/2000/svg"
 				width="640.000000pt"
@@ -91,40 +95,45 @@
 				</g>
 			</svg>
 		</header>
-		<nav class="navigation">
-			<div class="menu-close-container">
-				<button id="menuClose" class="menu-button">
-					<span class="visually-hidden">Close navigation menu</span>
-					<svg
-						aria-hidden="true"
-						version="1.1"
-						viewBox="0 0 14 14"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-					>
-						<g
-							fill="#fff"
-							id="Core"
-							transform="translate(-341.000000, -89.000000)"
-						>
-							<g id="close" transform="translate(341.000000, 89.000000)">
-								<path
-									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
-									id="Shape"
-								/>
-							</g>
+		<nav class="mobile-navigation">
+			<button
+				id="menuClose"
+				class="mobile-nav-menu-button mobile-nav-menu-button--close"
+			>
+				<span class="visually-hidden">Close navigation menu</span>
+				<svg
+					aria-hidden="true"
+					version="1.1"
+					viewBox="0 0 14 14"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+				>
+					<g id="Core" transform="translate(-341.000000, -89.000000)">
+						<g id="close" transform="translate(341.000000, 89.000000)">
+							<path
+								d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+								id="Shape"
+							/>
 						</g>
-					</svg>
-				</button>
-			</div>
+					</g>
+				</svg>
+			</button>
 			<ul class="navigation-links">
-				<!-- <li><a href="/about">About</a></li> -->
-				<li><a href="/camping">Camping</a></li>
-				<li><a href="/facilities">Facilities</a></li>
-				<li><a href="/hiking">Hiking</a></li>
-				<li><a href="/location">Location</a></li>
-				<li><a href="/bookings">Bookings</a></li>
+				<li><a class="navigation-link" href="/camping">Camping</a></li>
+				<li><a class="navigation-link" href="/facilities">Facilities</a></li>
+				<li><a class="navigation-link" href="/hiking">Hiking</a></li>
+				<li><a class="navigation-link" href="/location">Location</a></li>
+				<li><a class="navigation-link" href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<nav class="desktop-navigation">
+			<ul class="navigation-links">
+				<li><a class="navigation-link" href="/camping">Camping</a></li>
+				<li><a class="navigation-link" href="/facilities">Facilities</a></li>
+				<li><a class="navigation-link" href="/hiking">Hiking</a></li>
+				<li><a class="navigation-link" href="/location">Location</a></li>
+				<li><a class="navigation-link" href="/bookings">Bookings</a></li>
 			</ul>
 		</nav>
 		<main>{{ content }}</main>
@@ -203,7 +212,7 @@
 		var body = document.querySelector('body');
 		var menuOpen = document.getElementById('menuOpen');
 		var menuClose = document.getElementById('menuClose');
-		var navigation = document.querySelector('.navigation');
+		var navigation = document.querySelector('.mobile-navigation');
 
 		menuOpen.addEventListener('click', function () {
 			navigation.classList.add('open');
