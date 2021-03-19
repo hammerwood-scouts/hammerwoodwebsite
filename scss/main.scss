@@ -47,6 +47,31 @@ body.no-scroll {
 	margin: 20px 20px;
 	align-items: center;
 	color: $green;
+
+	.header-logo {
+		fill: $green;
+		height: 100%;
+		width: 80px;
+	}
+
+	.main-heading {
+		font-family: 'Encode Sans', sans-serif;
+		flex-grow: 1;
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+
+	@media (min-width: 500px) {
+		height: 100px;
+
+		.header-logo {
+			width: 110px;
+		}
+
+		.main-heading {
+			font-size: 2em;
+		}
+	}
 }
 
 .main-heading-row {
@@ -80,18 +105,6 @@ body.no-scroll {
 	@media (min-width: 500px) {
 		display: none;
 	}
-}
-
-.header-logo {
-	height: 100%;
-	fill: $green;
-}
-
-.main-heading {
-	font-family: 'Encode Sans', sans-serif;
-	flex-grow: 1;
-	font-size: 1.5em;
-	font-weight: 500;
 }
 
 .mobile-navigation {
@@ -170,7 +183,7 @@ main {
 	border-bottom: 3px solid;
 	border-color: #0b5345;
 	margin: 20px 15px;
-	padding: 20px;
+	padding: 20px 20px 50px 20px;
 
 	& h1,
 	h2,
@@ -203,8 +216,14 @@ main {
 		}
 	}
 
-	& a:hover {
-		text-decoration: none;
+	& a {
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:focus {
+			outline: 2px solid currentColor;
+		}
 	}
 
 	& img {
@@ -229,6 +248,29 @@ main {
 		text-align: right;
 		font-size: 0.75rem;
 		font-style: italic;
+	}
+
+	@media (min-width: 500px) {
+		margin-inline: 20px;
+		padding-inline: 30px;
+
+		& img {
+			width: unset;
+			margin: 0;
+			max-width: 100%;
+		}
+
+		& img:nth-of-type(even) {
+			float: left;
+			margin-right: 20px;
+			margin-left: 0;
+		}
+
+		& img:nth-of-type(odd) {
+			float: right;
+			margin-right: 0;
+			margin-left: 20px;
+		}
 	}
 }
 
@@ -257,6 +299,10 @@ ol li {
 	border-spacing: 0;
 	width: 100%;
 	font-size: 0.75rem;
+
+	@media (min-width: 500px) {
+		font-size: 1rem;
+	}
 }
 
 .header-row {
@@ -288,8 +334,13 @@ footer {
 .social-link {
 	display: inline-block;
 	margin: 10px;
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
+	padding: 5px;
+
+	&:focus {
+		outline: 2px solid $green;
+	}
 }
 
 .logo {
@@ -334,47 +385,8 @@ footer {
 	max-width: 100%;
 	height: auto;
 	min-height: 400px;
-}
 
-@media (min-width: 500px) {
-	.header {
-		height: 100px;
-	}
-	.header-logo {
-		width: 110px;
-	}
-	.main-heading {
-		font-size: 2em;
-	}
-
-	main {
-		margin-inline: 20px;
-		padding-inline: 30px;
-
-		& img {
-			width: unset;
-			margin: 0;
-			max-width: 100%;
-		}
-
-		& img:nth-of-type(even) {
-			float: left;
-			margin-right: 20px;
-			margin-left: 0;
-		}
-
-		& img:nth-of-type(odd) {
-			float: right;
-			margin-right: 0;
-			margin-left: 20px;
-		}
-	}
-
-	.meetings-table {
-		font-size: 1rem;
-	}
-
-	.google-maps-embed {
+	@media (min-width: 500px) {
 		min-height: 450px;
 	}
 }
