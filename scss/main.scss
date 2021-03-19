@@ -55,6 +55,7 @@ body.no-scroll {
 
 .header-logo {
 	height: 100%;
+	fill: $green;
 }
 
 .main-heading {
@@ -66,7 +67,6 @@ body.no-scroll {
 
 main {
 	flex-grow: 1;
-	background-color: white;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	border-color: #0b5345;
