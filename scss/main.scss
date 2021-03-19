@@ -1,3 +1,5 @@
+$green: #0b5345;
+
 html,
 body {
 	margin: 0;
@@ -6,8 +8,8 @@ body {
 }
 
 body {
-	background: #0b5345;
-	font-family: 'Open Sans', sans-serif;
+	background: white;
+	font-family: 'Montserrat', sans-serif;
 	max-width: 1000px;
 	margin: 0 auto;
 	display: flex;
@@ -47,7 +49,7 @@ body.no-scroll {
 	height: 25px;
 	width: 25px;
 	padding: 5px;
-	fill: white;
+	fill: $green;
 	cursor: pointer;
 }
 
@@ -56,22 +58,91 @@ body.no-scroll {
 }
 
 .main-heading {
+	font-family: 'Encode Sans', sans-serif;
 	flex-grow: 1;
 	font-size: 1.5em;
+	font-weight: 500;
+}
+
+main {
+	flex-grow: 1;
+	background-color: white;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #0b5345;
+	margin: 20px 15px;
+	padding: 20px;
+
+	& h1,
+	h2,
+	h3,
+	h4 {
+		color: #0b5345;
+		font-family: 'Encode Sans', sans-serif;
+	}
+
+	& h1 {
+		font-weight: 400;
+	}
+
+	& h2,
+	h3,
+	h4 {
+		font-weight: 500;
+	}
+
+	& strong {
+		font-weight: 600;
+	}
+
+	p {
+		color: black;
+		line-height: 24px;
+
+		&:nth-of-type(1) {
+			margin-top: 0;
+		}
+	}
+
+	& a:hover {
+		text-decoration: none;
+	}
+
+	& img {
+		border-radius: 3px;
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	& figure {
+		width: 100%;
+		margin: 30px auto;
+		max-width: 580px;
+	}
+
+	& figure > img {
+		margin: 0;
+	}
+
+	& figcaption {
+		color: black;
+		padding: 3px;
+		text-align: right;
+		font-size: 0.75rem;
+		font-style: italic;
+	}
 }
 
 .main-heading-row {
 	display: block;
 	text-align: end;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: white;
+	color: $green;
 }
 
 .navigation {
 	position: absolute;
 	z-index: 1;
-	background-color: black;
+	background-color: $green;
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
@@ -83,7 +154,7 @@ body.no-scroll {
 
 .navigation.open {
 	opacity: 1;
-	transform: translateX(0);
+	transform: translateX(-10vw);
 }
 
 .menu-close-container {
@@ -115,53 +186,12 @@ body.no-scroll {
 	text-decoration: underline;
 }
 
-main {
-	flex-grow: 1;
-	background-color: white;
-	border: 2px solid black;
-	border-radius: 8px;
-	margin: 20px 15px;
-	padding: 20px;
-}
-
-main a:hover {
-	text-decoration: none;
-}
-
-main img {
-	border-radius: 3px;
-	width: 100%;
-	margin: 20px 0;
-}
-
-figure {
-	width: 100%;
-	margin: 30px auto;
-	max-width: 580px;
-}
-
-figure > img {
-	margin: 0;
-}
-
-figcaption {
-	color: black;
-	padding: 3px;
-	text-align: right;
-	font-size: 0.75rem;
-	font-style: italic;
-}
-
-main p:nth-of-type(1) {
-	margin-top: 0;
-}
-
 td {
 	padding: 5px 20px;
 }
 
 td:first-of-type {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 td:last-of-type {
@@ -185,7 +215,7 @@ ol li {
 
 .header-row {
 	background-color: lightgray;
-	font-weight: bold;
+	font-weight: 600;
 	text-align: center;
 }
 .meetings-table td:nth-child(n + 2) {
@@ -287,29 +317,30 @@ footer {
 
 	.navigation-links {
 		flex-direction: row;
+		color: $green;
 	}
 
 	main {
 		margin-inline: 20px;
 		padding-inline: 30px;
-	}
 
-	main img {
-		width: unset;
-		margin: 0;
-		max-width: 100%;
-	}
+		& img {
+			width: unset;
+			margin: 0;
+			max-width: 100%;
+		}
 
-	main img:nth-of-type(odd) {
-		float: left;
-		margin-right: 20px;
-		margin-left: 0;
-	}
+		& img:nth-of-type(even) {
+			float: left;
+			margin-right: 20px;
+			margin-left: 0;
+		}
 
-	main img:nth-of-type(even) {
-		float: right;
-		margin-right: 0;
-		margin-left: 20px;
+		& img:nth-of-type(odd) {
+			float: right;
+			margin-right: 0;
+			margin-left: 20px;
+		}
 	}
 
 	.meetings-table {
