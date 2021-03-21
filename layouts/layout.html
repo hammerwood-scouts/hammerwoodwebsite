@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500&family=Montserrat:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
 		<link href="./main.css" rel="stylesheet" />
@@ -39,7 +39,10 @@
 
 	<body>
 		<header class="header">
-			<button id="menuOpen" class="menu-button">
+			<button
+				id="menuOpen"
+				class="mobile-nav-menu-button mobile-nav-menu-button--open"
+			>
 				<span class="visually-hidden">Open navigation menu</span>
 				<svg
 					aria-hidden="true"
@@ -60,46 +63,77 @@
 				<span class="main-heading-row">Hammerwood</span>
 				<span class="main-heading-row"> Scout Campsite</span>
 			</h1>
-			<img
+			<svg
 				class="header-logo"
-				src="./images/fleur-de-lis-marque.svg"
-				alt="Scout Logo"
-			/>
+				aria-hidden="true"
+				version="1.0"
+				xmlns="http://www.w3.org/2000/svg"
+				width="640.000000pt"
+				height="480.000000pt"
+				viewBox="0 0 640.000000 480.000000"
+				preserveAspectRatio="xMidYMid meet"
+			>
+				<g
+					transform="translate(0.000000,480.000000) scale(0.100000,-0.100000)"
+					stroke="none"
+				>
+					<path
+						d="M3060 4348 c-41 -44 -138 -131 -215 -193 -222 -178 -315 -286 -395 -458 -63 -134 -75 -191 -75 -362 0 -210 22 -286 192 -669 96 -216 157 -389 175 -493 l12 -73 112 0 113 0 -6 37 c-24 170 -81 341 -210 632 -148 335 -180 450 -171 610 14 227 122 389 421 628 l127 102 128 -102 c301 -241 407 -402 420 -633 8 -159 -28 -287 -173 -610 -119 -264 -186 -465 -208 -626 l-6 -38 113 0 112 0 12 73 c18 104 79 277 175 493 170 383 192 459 192 669 0 171 -12 228 -75 362 -80 172 -173 280 -395 458 -77 62 -175 149 -219 194 -43 44 -79 80 -80 80 0 -1 -35 -37 -76 -81z"
+					/>
+					<path
+						d="M1515 3174 c-87 -21 -118 -31 -173 -57 -163 -76 -296 -233 -354 -417 -19 -62 -23 -97 -23 -202 0 -69 3 -129 7 -133 3 -4 54 3 112 16 l106 22 -6 61 c-18 183 86 370 252 452 176 88 383 43 546 -118 145 -143 261 -371 314 -617 l17 -81 110 0 110 0 -7 53 c-10 75 -54 240 -87 324 -136 345 -350 583 -601 670 -58 20 -97 26 -188 29 -63 1 -124 1 -135 -2z"
+					/>
+					<path
+						d="M4525 3170 c-246 -52 -468 -247 -614 -538 -79 -158 -138 -338 -157 -479 l-7 -53 110 0 110 0 17 81 c53 246 169 474 314 617 202 200 472 216 657 41 98 -92 154 -243 141 -375 l-6 -61 106 -22 c58 -13 109 -20 112 -16 4 4 7 64 7 133 0 105 -4 140 -23 202 -69 220 -233 387 -451 456 -54 18 -258 27 -316 14z"
+					/>
+					<path
+						d="M1880 1800 l0 -110 1258 2 1257 3 3 108 3 107 -1261 0 -1260 0 0 -110z"
+					/>
+					<path
+						d="M2726 1430 c-21 -85 -92 -232 -151 -317 l-45 -63 25 -55 c82 -187 324 -419 530 -510 l55 -25 55 25 c206 91 448 323 530 510 l25 55 -45 63 c-59 85 -130 232 -151 317 l-18 70 -113 0 -112 0 6 -32 c18 -97 60 -217 114 -325 l61 -123 -42 -55 c-79 -103 -264 -255 -310 -255 -46 0 -227 149 -307 252 l-45 59 61 122 c53 107 93 217 116 325 l7 32 -114 0 -114 0 -18 -70z"
+					/>
+				</g>
+			</svg>
 		</header>
-		<nav class="navigation">
-			<div class="menu-close-container">
-				<button id="menuClose" class="menu-button">
-					<span class="visually-hidden">Close navigation menu</span>
-					<svg
-						aria-hidden="true"
-						version="1.1"
-						viewBox="0 0 14 14"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-					>
-						<g
-							fill="#fff"
-							id="Core"
-							transform="translate(-341.000000, -89.000000)"
-						>
-							<g id="close" transform="translate(341.000000, 89.000000)">
-								<path
-									d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
-									id="Shape"
-								/>
-							</g>
+		<nav class="mobile-navigation">
+			<button
+				id="menuClose"
+				class="mobile-nav-menu-button mobile-nav-menu-button--close"
+			>
+				<span class="visually-hidden">Close navigation menu</span>
+				<svg
+					aria-hidden="true"
+					version="1.1"
+					viewBox="0 0 14 14"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+				>
+					<g id="Core" transform="translate(-341.000000, -89.000000)">
+						<g id="close" transform="translate(341.000000, 89.000000)">
+							<path
+								d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+								id="Shape"
+							/>
 						</g>
-					</svg>
-				</button>
-			</div>
+					</g>
+				</svg>
+			</button>
 			<ul class="navigation-links">
-				<!-- <li><a href="/about">About</a></li> -->
-				<li><a href="/camping">Camping</a></li>
-				<li><a href="/facilities">Facilities</a></li>
-				<li><a href="/hiking">Hiking</a></li>
-				<li><a href="/location">Location</a></li>
-				<li><a href="/bookings">Bookings</a></li>
+				<li><a class="navigation-link" href="/camping">Camping</a></li>
+				<li><a class="navigation-link" href="/facilities">Facilities</a></li>
+				<li><a class="navigation-link" href="/hiking">Hiking</a></li>
+				<li><a class="navigation-link" href="/location">Location</a></li>
+				<li><a class="navigation-link" href="/bookings">Bookings</a></li>
+			</ul>
+		</nav>
+		<nav class="desktop-navigation">
+			<ul class="navigation-links">
+				<li><a class="navigation-link" href="/camping">Camping</a></li>
+				<li><a class="navigation-link" href="/facilities">Facilities</a></li>
+				<li><a class="navigation-link" href="/hiking">Hiking</a></li>
+				<li><a class="navigation-link" href="/location">Location</a></li>
+				<li><a class="navigation-link" href="/bookings">Bookings</a></li>
 			</ul>
 		</nav>
 		<main>{{ content }}</main>
@@ -178,7 +212,7 @@
 		var body = document.querySelector('body');
 		var menuOpen = document.getElementById('menuOpen');
 		var menuClose = document.getElementById('menuClose');
-		var navigation = document.querySelector('.navigation');
+		var navigation = document.querySelector('.mobile-navigation');
 
 		menuOpen.addEventListener('click', function () {
 			navigation.classList.add('open');
