@@ -179,6 +179,27 @@ body.no-scroll {
 	}
 }
 
+.announcement {
+	--border-color: var(--green);
+	--background-color: #0b53452b;
+
+	border: 2px solid var(--border-color);
+	border-radius: 8px;
+	background-color: var(--background-color);
+	font-family: 'Encode Sans', sans-serif;
+	padding: 20px;
+	margin-bottom: 10px;
+
+	&.orange {
+		--border-color: #ffa500;
+		--background-color: #ffa5002b;
+	}
+	&.red {
+		--border-color: #ff4800;
+		--background-color: #ff48002b;
+	}
+}
+
 main {
 	flex-grow: 1;
 	border-top: 3px solid;
