@@ -1,4 +1,6 @@
-$green: #0b5345;
+:root {
+	--green: #0b5345;
+}
 
 *,
 *::before,
@@ -46,10 +48,10 @@ body.no-scroll {
 	display: flex;
 	margin: 20px 20px;
 	align-items: center;
-	color: $green;
+	color: var(--green);
 
 	.header-logo {
-		fill: $green;
+		fill: var(--green);
 		height: 100%;
 		width: 80px;
 	}
@@ -93,8 +95,8 @@ body.no-scroll {
 	}
 
 	&.mobile-nav-menu-button--open {
-		fill: $green;
-		outline-color: $green;
+		fill: var(--green);
+		outline-color: var(--green);
 	}
 
 	&.mobile-nav-menu-button--close {
@@ -118,7 +120,7 @@ body.no-scroll {
 	margin: 0;
 	padding: 50px;
 	color: white;
-	background-color: $green;
+	background-color: var(--green);
 	transform: translateX(-$width);
 	transition: transform 0.3s ease;
 	opacity: 0;
@@ -139,7 +141,7 @@ body.no-scroll {
 
 .desktop-navigation {
 	display: none;
-	color: $green;
+	color: var(--green);
 
 	@media (min-width: 500px) {
 		display: block;
@@ -177,11 +179,32 @@ body.no-scroll {
 	}
 }
 
+.announcement {
+	--border-color: var(--green);
+	--background-color: #0b53452b;
+
+	border: 2px solid var(--border-color);
+	border-radius: 8px;
+	background-color: var(--background-color);
+	font-family: 'Encode Sans', sans-serif;
+	padding: 20px;
+	margin-bottom: 10px;
+
+	&.orange {
+		--border-color: #ffa500;
+		--background-color: #ffa5002b;
+	}
+	&.red {
+		--border-color: #ff4800;
+		--background-color: #ff48002b;
+	}
+}
+
 main {
 	flex-grow: 1;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #0b5345;
+	border-color: var(--green);
 	margin: 20px 15px;
 	padding: 20px 20px 50px 20px;
 
@@ -189,7 +212,7 @@ main {
 	h2,
 	h3,
 	h4 {
-		color: #0b5345;
+		color: var(--green);
 		font-family: 'Encode Sans', sans-serif;
 	}
 
@@ -323,7 +346,7 @@ ol li {
 footer {
 	padding: 0 30px 50px 30px;
 	text-align: center;
-	color: $green;
+	color: var(--green);
 	font-size: 0.85rem;
 }
 
@@ -339,7 +362,7 @@ footer {
 	padding: 5px;
 
 	&:focus {
-		outline: 2px solid $green;
+		outline: 2px solid var(--green);
 	}
 }
 
@@ -349,7 +372,7 @@ footer {
 
 	&.facebook {
 		circle {
-			fill: $green;
+			fill: var(--green);
 
 			:hover > & {
 				fill: #3c5a9a;
@@ -363,7 +386,7 @@ footer {
 
 	&.instagram {
 		path {
-			fill: $green;
+			fill: var(--green);
 		}
 
 		&:hover {
