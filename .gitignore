@@ -20,3 +20,6 @@ old*
 
 # Local Netlify folder
 .netlify
+
+# generated folders
+.next
