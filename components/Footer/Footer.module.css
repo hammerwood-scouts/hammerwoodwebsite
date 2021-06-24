@@ -1,0 +1,17 @@
+.footer {
+	padding: 0 30px 50px 30px;
+	text-align: center;
+	color: var(--green);
+	font-size: 0.85rem;
+}
+
+.socialLink {
+	display: inline-block;
+	margin: 10px;
+	height: 50px;
+	width: 50px;
+	padding: 5px;
+}
+.socialLink:focus {
+	outline: 2px solid var(--green);
+}
