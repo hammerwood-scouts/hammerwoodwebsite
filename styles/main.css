@@ -1,0 +1,34 @@
+:root {
+	--green: #0b5345;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: white;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	color: inherit;
+}
+
+body.no-scroll {
+	height: 100vh;
+	overflow: hidden;
+}
