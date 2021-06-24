@@ -20,8 +20,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	max-width: 1000px;
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
 }
 
 a {
@@ -31,4 +29,24 @@ a {
 body.no-scroll {
 	height: 100vh;
 	overflow: hidden;
+}
+
+#__next {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.google-maps-embed {
+	margin: auto;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: 400px;
+}
+
+@media (min-width: 500px) {
+	.google-maps-embed {
+		min-height: 450px;
+	}
 }

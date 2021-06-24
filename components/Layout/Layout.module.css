@@ -1,0 +1,15 @@
+.main {
+	flex-grow: 1;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: var(--green);
+	margin: 20px 15px;
+	padding: 20px 20px 50px 20px;
+}
+
+@media (min-width: 500px) {
+	.main {
+		margin-inline: 20px;
+		padding-inline: 30px;
+	}
+}
