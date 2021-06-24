@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { VisuallyHidden } from '../Typography/Typography';
 import styles from './Navigation.module.css';
 
@@ -54,9 +55,9 @@ function DesktopNavigation() {
 function NavLink({ href, children }) {
 	return (
 		<li>
-			<a className={styles.navigationLink} href={href}>
-				{children}
-			</a>
+			<Link href={href}>
+				<a className={styles.navigationLink}>{children}</a>
+			</Link>
 		</li>
 	);
 }
