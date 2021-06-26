@@ -12,10 +12,8 @@ export default function Facilities() {
 				accessible parking available.
 			</p>
 			<h2>Accommodation</h2>
-			<p>
-				<h3>The Hut</h3>
-				The Hut comprises a hall, catering kitchen and laundry facilities.
-			</p>
+			<h3>The Hut</h3>
+			<p>The Hut comprises a hall, catering kitchen and laundry facilities.</p>
 			<p>
 				The hut is often used for catering, training, and indoor activities. The
 				hall offers a flexible space with enough room to cater for around 20
@@ -31,14 +29,14 @@ export default function Facilities() {
 				The lobby of the hut offers seating and shoe storage, as well a laundry
 				area with double sink, washing machine and tumble drier.
 			</p>
+			<h3>The Lodge</h3>
 			<p>
-				<h3>The Lodge</h3>
 				The Lodge comprises 22 bunks divided into 3 rooms (16 bunks, 4 bunks, 2
 				bunks). The lodge has storage heaters which warm up while the generator
 				is running.
 			</p>
+			<h3>Toilet Block</h3>
 			<p>
-				<h3>Toilet Block</h3>
 				There is a toilet block for all users of the site. We are currently
 				fundraising for a shower block!
 			</p>

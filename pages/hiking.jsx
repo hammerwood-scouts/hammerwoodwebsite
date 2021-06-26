@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Layout } from '../components/Layout/Layout';
 import { VisuallyHidden } from '../components/Typography/Typography';
 
@@ -33,10 +34,12 @@ export default function Hiking() {
 				can involve traveling through West Sussex, East Sussex and/or Kent.
 			</p>
 			<h2>Nearby Campsites</h2>
-			<a href="./images/hikingmap.jpg">
-				<img src="./images/hikingmap.jpg" alt="Map of nearby campsites" />
-				<VisuallyHidden>View larger image</VisuallyHidden>
-			</a>
+			<Link href="/images/hikingmap.jpg">
+				<a>
+					<img src="/images/hikingmap.jpg" alt="Map of nearby campsites" />
+					<VisuallyHidden>View larger image</VisuallyHidden>
+				</a>
+			</Link>
 			<ol>
 				<li>
 					<strong>Stanford Scout Camp Site</strong>
