@@ -2,7 +2,6 @@
 	"name": "hammerwoodwebsite",
 	"scripts": {
 		"format": "prettier . --write --ignore-path .gitignore",
-		"watch": "gulp watch",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
@@ -18,8 +17,6 @@
 	},
 	"homepage": "https://github.com/tcluk/hammerwoodwebsite#readme",
 	"devDependencies": {
-		"concurrently": "^6.0.0",
-		"gulp-sourcemaps": "^3.0.0",
 		"netlify-cli": "^3.13.1",
 		"prettier": "^2.2.1"
 	},
@@ -30,13 +27,9 @@
 		"useTabs": true
 	},
 	"dependencies": {
-		"gulp": "^4.0.2",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-sass": "^4.1.0",
 		"next": "^11.0.1",
 		"postcss": "^8.3.5",
 		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"sass": "^1.32.8"
+		"react-dom": "^17.0.2"
 	}
 }
