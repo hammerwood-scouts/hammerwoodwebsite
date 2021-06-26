@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Layout } from '../components/Layout/Layout';
 
 export default function About() {
@@ -22,7 +23,10 @@ export default function About() {
 			</p>
 			<p>
 				If you have any questions, or would like to arrange a site visit, please{' '}
-				<a href="/bookings">contact us</a> and we will be happy to help.
+				<Link href="/bookings">
+					<a>contact us</a>
+				</Link>{' '}
+				and we will be happy to help.
 			</p>
 			<p>
 				Please note that Hammerwood Scout Campsite is not open to public

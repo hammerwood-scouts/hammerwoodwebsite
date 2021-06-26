@@ -22,7 +22,7 @@ export default function Location() {
 			<iframe
 				className="google-maps-embed"
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.966604700625!2d0.052008212538554345!3d51.12962427772824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzQ2LjciTiAwwrAwMycwNy41IkU!5e1!3m2!1sen!2suk!4v1434993334935"
-				frameborder="0"
+				frameBorder="0"
 			></iframe>
 		</Layout>
 	);

@@ -4,9 +4,9 @@ export default function Meetings() {
 	return (
 		<Layout>
 			<h1>Meetings</h1>
-			<table class="meetings-table">
+			<table className="meetings-table">
 				<thead>
-					<tr class="header-row">
+					<tr className="header-row">
 						<th>Meeting</th>
 						<th>Date</th>
 						<th>Documentation</th>
