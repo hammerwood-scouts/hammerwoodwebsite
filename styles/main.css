@@ -45,8 +45,49 @@ body.no-scroll {
 	min-height: 400px;
 }
 
+main img {
+	border-radius: 3px;
+	width: 100%;
+	margin: 20px 0;
+}
+
+main figure {
+	width: 100%;
+	margin: 30px auto;
+	max-width: 580px;
+}
+
+main figure > img {
+	margin: 0;
+}
+
+main figcaption {
+	color: black;
+	padding: 3px;
+	text-align: right;
+	font-size: 0.75rem;
+	font-style: italic;
+}
+
 @media (min-width: 500px) {
 	.google-maps-embed {
 		min-height: 450px;
+	}
+	main img {
+		width: unset;
+		margin: 0;
+		max-width: 100%;
+	}
+
+	main img:nth-of-type(even) {
+		float: left;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+
+	main img:nth-of-type(odd) {
+		float: right;
+		margin-right: 0;
+		margin-left: 20px;
 	}
 }
