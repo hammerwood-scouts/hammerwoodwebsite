@@ -1,0 +1,25 @@
+.meetingsTable {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	font-size: 0.75rem;
+
+	@media (min-width: 500px) {
+		font-size: 1rem;
+	}
+}
+
+.headerRow {
+	background-color: lightgray;
+	font-weight: 600;
+	text-align: center;
+}
+.meetingsTable td:nth-child(n + 2) {
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+.meetingsTable td,
+.meetingsTable th {
+	border: 1px solid grey;
+	padding: 10px 5px;
+}
