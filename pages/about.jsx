@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export default function About() {
 	return (
-		<Layout>
+		<Layout title="About">
 			<h1>About the Campsite</h1>
 			<p>
 				Hammerwood Scout Campsite is a site of 26 acres of woodland. It is owned

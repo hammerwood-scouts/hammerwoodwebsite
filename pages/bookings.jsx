@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export default function Bookings() {
 	return (
-		<Layout>
+		<Layout title="Bookings">
 			<h1>Bookings & Enquiries</h1>
 			<p>
 				We recommend that all organisers arrange a site visit before their stay.
