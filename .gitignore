@@ -13,6 +13,7 @@ Thumbs.db
 # Node modules and output
 node_modules
 dist
+out
 src/_includes/css
 
 # Misc old files
@@ -20,3 +21,6 @@ old*
 
 # Local Netlify folder
 .netlify
+
+# generated folders
+.next

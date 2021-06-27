@@ -1,0 +1,105 @@
+.mobileNavigation {
+	--width: 95vw;
+
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: var(--width);
+	height: 100vh;
+	margin: 0;
+	padding: 50px;
+	color: white;
+	background-color: var(--green);
+	transform: translateX(calc(-1 * var(--width)));
+	transition: transform 0.3s ease;
+	opacity: 0;
+}
+.mobileNavigationOpen {
+	opacity: 1;
+	transform: translateX(0vw);
+}
+.mobileNavMenuButtonClose {
+	align-self: flex-end;
+}
+/* @media (min-width: 500px) {
+	.mobileNavigation {
+		display: none;
+	}
+} */
+
+.desktopNavigation {
+	display: none;
+	color: var(--green);
+}
+
+/* @media (min-width: 500px) {
+	.desktopNavigation {
+		display: block;
+	}
+} */
+
+.navigationLinks {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	align-items: center;
+}
+.mobileNavigation .navigationLinks {
+	height: 50%;
+	flex-direction: column;
+}
+
+.desktopNavigation .navigationLinks {
+	flex-direction: row;
+}
+
+.navigationLink {
+	padding: 5px;
+	text-decoration: none;
+}
+
+.navigationLink:hover {
+	text-decoration: underline;
+}
+
+.navigationLink:focus {
+	outline: 2px solid currentColor;
+}
+
+.mobileNavMenuButton {
+	appearance: none;
+	border: none;
+	background: none;
+	height: 25px;
+	width: 25px;
+	padding: 5px;
+	cursor: pointer;
+}
+.mobileNavMenuButton:focus {
+	outline: 2px solid currentColor;
+}
+
+.mobileNavMenuButton.mobileNavMenuButtonOpen {
+	fill: var(--green);
+	outline-color: var(--green);
+}
+
+.mobileNavMenuButton.mobileNavMenuButtonClose {
+	fill: white;
+	outline-color: white;
+}
+
+@media (min-width: 500px) {
+	.mobileNavMenuButton {
+		display: none;
+	}
+
+	.mobileNavigation {
+		display: none;
+	}
+	.desktopNavigation {
+		display: block;
+	}
+}

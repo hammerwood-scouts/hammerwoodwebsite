@@ -1,0 +1,93 @@
+:root {
+	--green: #0b5345;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: white;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+	color: inherit;
+}
+
+body.no-scroll {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#__next {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.google-maps-embed {
+	margin: auto;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: 400px;
+}
+
+main img {
+	border-radius: 3px;
+	width: 100%;
+	margin: 20px 0;
+}
+
+main figure {
+	width: 100%;
+	margin: 30px auto;
+	max-width: 580px;
+}
+
+main figure > img {
+	margin: 0;
+}
+
+main figcaption {
+	color: black;
+	padding: 3px;
+	text-align: right;
+	font-size: 0.75rem;
+	font-style: italic;
+}
+
+@media (min-width: 500px) {
+	.google-maps-embed {
+		min-height: 450px;
+	}
+	main img {
+		width: unset;
+		margin: 0;
+		max-width: 100%;
+	}
+
+	main img:nth-of-type(even) {
+		float: left;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+
+	main img:nth-of-type(odd) {
+		float: right;
+		margin-right: 0;
+		margin-left: 20px;
+	}
+}

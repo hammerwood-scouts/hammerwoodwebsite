@@ -1,0 +1,39 @@
+.header {
+	height: 60px;
+	display: flex;
+	margin: 20px 20px;
+	align-items: center;
+	color: var(--green);
+}
+
+.headerLogo {
+	fill: var(--green);
+	height: 100%;
+	width: 80px;
+}
+
+.heading {
+	font-family: 'Encode Sans', sans-serif;
+	flex-grow: 1;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.headingRow {
+	display: block;
+	text-align: end;
+}
+
+@media (min-width: 500px) {
+	.header {
+		height: 100px;
+	}
+
+	.headerLogo {
+		width: 110px;
+	}
+
+	.heading {
+		font-size: 2em;
+	}
+}
