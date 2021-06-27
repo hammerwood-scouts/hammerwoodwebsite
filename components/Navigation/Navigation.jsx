@@ -2,20 +2,16 @@ import Link from 'next/link';
 import { VisuallyHidden } from '../Typography/Typography';
 import styles from './Navigation.module.css';
 
-export function Navigation() {
+export function MobileNavigation({ open, onNavClose }) {
 	return (
-		<>
-			<MobileNavigation />
-			<DesktopNavigation />
-		</>
-	);
-}
-
-function MobileNavigation() {
-	return (
-		<nav className={styles.mobileNavigation}>
+		<nav
+			className={[
+				styles.mobileNavigation,
+				open && styles.mobileNavigationOpen,
+			].join(' ')}
+		>
 			<button
-				id="menuClose"
+				onClick={onNavClose}
 				className={[
 					styles.mobileNavMenuButton,
 					styles.mobileNavMenuButtonClose,
@@ -44,11 +40,39 @@ function MobileNavigation() {
 	);
 }
 
-function DesktopNavigation() {
+export function DesktopNavigation() {
 	return (
 		<nav className={styles.desktopNavigation}>
 			<NavLinks />
 		</nav>
+	);
+}
+
+export function MobileNavigationOpenButton({ onClick }) {
+	return (
+		<button
+			onClick={onClick}
+			className={[
+				styles.mobileNavMenuButton,
+				styles.mobileNavMenuButtonOpen,
+			].join(' ')}
+		>
+			<VisuallyHidden>Open navigation menu</VisuallyHidden>
+			<svg
+				aria-hidden="true"
+				id="Layer_1_1_"
+				style={{ enableBackground: 'new 0 0 16 16' }}
+				version="1.1"
+				viewBox="0 0 16 16"
+				xmlSpace="preserve"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
+			>
+				<rect height="2" width="16" />
+				<rect height="2" width="16" y="7" />
+				<rect height="2" width="16" y="14" />
+			</svg>
+		</button>
 	);
 }
 

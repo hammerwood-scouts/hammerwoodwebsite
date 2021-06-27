@@ -10,11 +10,11 @@
 	padding: 50px;
 	color: white;
 	background-color: var(--green);
-	transform: translateX(-(var(--width)));
+	transform: translateX(calc(-1 * var(--width)));
 	transition: transform 0.3s ease;
 	opacity: 0;
 }
-.mobileNavigation.open {
+.mobileNavigationOpen {
 	opacity: 1;
 	transform: translateX(0vw);
 }
