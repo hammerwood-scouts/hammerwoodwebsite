@@ -87,7 +87,7 @@ const meetings = [
 
 export default function Meetings() {
 	return (
-		<Layout>
+		<Layout title="Meetings">
 			<h1>Meetings</h1>
 			<MeetingsTable meetings={meetings} />
 		</Layout>

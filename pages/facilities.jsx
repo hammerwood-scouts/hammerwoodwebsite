@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export default function Facilities() {
 	return (
-		<Layout>
+		<Layout title="Facilities">
 			<h1>Facilities</h1>
 			<p>
 				Hammerwood Scout Campsite offers a dynamic site suitable for a host of

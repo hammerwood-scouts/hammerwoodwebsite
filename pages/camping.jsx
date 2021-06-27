@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export default function Camping() {
 	return (
-		<Layout>
+		<Layout title="Camping">
 			<h1>Camping</h1>
 			<img
 				alt="A photo of one of the camping sites"

@@ -4,7 +4,7 @@ import { VisuallyHidden } from '../components/Typography/Typography';
 
 export default function Hiking() {
 	return (
-		<Layout>
+		<Layout title="Hiking">
 			<h1>Hiking</h1>
 			<p>
 				Situated in the middle of a chain of 6 campsites, Hammerwood Campsite is

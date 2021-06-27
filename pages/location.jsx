@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export default function Location() {
 	return (
-		<Layout>
+		<Layout title="Location">
 			<h1>Location</h1>
 			<p>
 				Hammerwood is located off the A264, between East Grinstead and Holtye.
