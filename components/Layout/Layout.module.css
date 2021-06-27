@@ -13,3 +13,61 @@
 		padding-inline: 30px;
 	}
 }
+
+.main h1,
+.main h2,
+.main h3,
+.main h4 {
+	color: var(--green);
+	font-family: 'Encode Sans', sans-serif;
+}
+
+.main h1 {
+	font-weight: 400;
+}
+
+.main h2,
+.main h3,
+.main h4 {
+	font-weight: 500;
+}
+
+.main strong {
+	font-weight: 600;
+}
+
+.main p {
+	color: black;
+	line-height: 24px;
+}
+.main p:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.main a:hover {
+	text-decoration: none;
+}
+
+.main a:focus {
+	outline: 2px solid currentColor;
+}
+
+.main td {
+	padding: 5px 20px;
+}
+
+.main td:first-of-type {
+	font-weight: 600;
+}
+
+.main td:last-of-type {
+	font-variant-numeric: tabular-nums;
+}
+
+.main ol {
+	margin: 20px 0;
+}
+
+.main ol li {
+	margin-top: 20px;
+}
