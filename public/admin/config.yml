@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: public/images
+public_folder: /images
+publish_mode: editorial_workflow
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content/pages/'
+    extension: 'mdx'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    identifier_field: slug
+    summary: '{{title}}'
+    fields:
+      - label: 'Slug'
+        name: 'slug'
+        widget: 'string'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
