@@ -16,7 +16,7 @@ const meetings = [
 		date: '15/05/2021',
 		agenda: {
 			link:
-				'https://drive.google.com/file/d/1XSIbdVvgxOZ3qFLrCefGSo-q9fBk140p/view?usp=sharing',
+				'https://drive.google.com/file/d/13rZDEwRN0HW_5msmALyVsCZf9tYAjI81/view?usp=sharing',
 			status: 'Draft Meeting Minutes',
 		},
 	},
