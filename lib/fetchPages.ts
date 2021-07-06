@@ -5,7 +5,13 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/pages');
 
-export function fetchPages() {
+export type PageMetadata = {
+	title: string;
+	slug: string;
+	fullPath: string;
+};
+
+export function fetchPages(): PageMetadata[] {
 	// Get file names under /content/pages
 	const fileNames = fs.readdirSync(postsDirectory);
 	const allPostsData = fileNames
@@ -21,7 +27,7 @@ export function fetchPages() {
 					yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }),
 				},
 			});
-			const matterData = matterResult.data;
+			const matterData = matterResult.data as PageMetadata;
 			matterData.fullPath = fullPath;
 
 			const slug = fileName.replace(/\.mdx$/, '');

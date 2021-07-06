@@ -1,13 +1,16 @@
+import { GetStaticProps, GetStaticPaths } from 'next';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import matter from 'gray-matter';
 import fs from 'fs';
 import yaml from 'js-yaml';
-import { fetchPages } from '../lib/fetchPages';
+import { fetchPages, PageMetadata } from '../lib/fetchPages';
 
 import { Layout } from '../components/Layout/Layout';
 
-const slugToPostContent = ((postContents) => {
+const slugToPostContent = ((
+	postContents: PageMetadata[],
+): Record<PageMetadata['slug'], PageMetadata> => {
 	let hash = {};
 	postContents.forEach((it) => (hash[it.slug] = it));
 	return hash;
@@ -21,7 +24,7 @@ export default function Page({ source }) {
 	);
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
 	const paths = fetchPages().map((it) => '/' + it.slug);
 	return {
 		paths,
@@ -29,8 +32,8 @@ export const getStaticPaths = async () => {
 	};
 };
 
-export const getStaticProps = async ({ params }) => {
-	const { slug } = params;
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+	const slug = params.slug as string;
 	const source = fs.readFileSync(slugToPostContent[slug].fullPath, 'utf8');
 	const { content, data } = matter(source, {
 		engines: {

@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/tcluk/hammerwoodwebsite#readme",
 	"devDependencies": {
+		"@types/react": "^17.0.13",
 		"eslint": "^7.29.0",
 		"eslint-config-next": "^11.0.1",
 		"netlify-cli": "^3.13.1",
