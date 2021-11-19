@@ -24,3 +24,24 @@ collections:
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
+  - name: 'config'
+    label: 'Config'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'announcement'
+        label: 'Announcement Config'
+        file: 'content/announcement.mdx'
+        format: 'frontmatter'
+
+        description: 'General site settings'
+        fields:
+          - label: 'Announcement Type'
+            name: 'type'
+            widget: 'select'
+            hint: 'What kind of announcement is this?'
+            options: ['orange', 'red', 'hide']
+          - label: 'Body'
+            name: 'body'
+            widget: 'markdown'
