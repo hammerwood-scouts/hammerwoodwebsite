@@ -1,13 +1,5 @@
 {
 	"name": "hammerwoodwebsite",
-	"scripts": {
-		"format": "prettier . --write --ignore-path .gitignore",
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"export": "next build && next export -o ./dist"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/tcluk/hammerwoodwebsite.git"
@@ -16,12 +8,13 @@
 		"url": "https://github.com/tcluk/hammerwoodwebsite/issues"
 	},
 	"homepage": "https://github.com/tcluk/hammerwoodwebsite#readme",
-	"devDependencies": {
-		"@types/react": "^17.0.13",
-		"eslint": "^7.29.0",
-		"eslint-config-next": "^11.0.1",
-		"netlify-cli": "^3.13.1",
-		"prettier": "^2.2.1"
+	"scripts": {
+		"format": "prettier . --write --ignore-path .gitignore",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"export": "next build && next export -o ./dist"
 	},
 	"prettier": {
 		"semi": true,
@@ -32,10 +25,18 @@
 	"dependencies": {
 		"gray-matter": "^4.0.3",
 		"js-yaml": "^4.1.0",
-		"next": "^11.0.1",
-		"next-mdx-remote": "^3.0.2",
-		"postcss": "^8.3.5",
+		"next": "^12.0.4",
+		"next-mdx-remote": "^3.0.8",
+		"postcss": "^8.3.11",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.35",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "^12.0.4",
+		"netlify-cli": "^7.0.0",
+		"prettier": "^2.4.1",
+		"typescript": "^4.5.2"
 	}
 }
