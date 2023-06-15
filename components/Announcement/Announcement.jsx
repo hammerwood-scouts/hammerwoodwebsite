@@ -7,12 +7,11 @@ export function Announcement() {
 	// Adding the “orange” class will show an orange border and background for more warning type messages (i.e. “Booking are almost full.”)
 	// Adding the “red” class will show a red border and background for more severe type messages (i.e. “The site is closed.”)
 	return (
-		<div className={[styles.announcement, styles.orange].join(' ')}>
-			Campsite now open. Limited capacity.{' '}
+		<div className={[styles.announcement, styles.green].join(' ')}>
 			<Link href="/bookings">
 				<a>Contact us</a>
 			</Link>{' '}
-			to check availability and book.
+			to check prices and availability and to book your stay.
 		</div>
 	);
 }
